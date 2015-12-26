@@ -18,6 +18,7 @@ twitter_username: dirtyderzzz
 github_username:  cderwin
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 
 destination: build
+exclude: [".gitignore", "Makefile"]

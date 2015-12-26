@@ -3,6 +3,8 @@ jekyll := jekyll
 builddir := build
 deploydir := /var/www/site
 
+src := $(shell find . -type f)
+
 run: $(src)
 	$(jekyll) serve --detach
 
