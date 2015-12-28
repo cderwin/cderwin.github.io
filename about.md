@@ -4,12 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This is the website of Cameron Derwin.  I'm a software engineer for [Predictive Science](http://predictivescience.com) working and living in Austin, TX.  I work on maintaining, optimizing, and creating a reliable and fault-tolerant data pipeline that processes millions of documents per day.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+You can find my resume [here](http://camderwin.us/resume) (html) or [here](http://camderwin.us/resume.pdf) (pdf).
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Feel free to contact me at my personal email [camderwin@gmail.com](mailto:camderwin@gmail.com) or my work email [cderwin@predictivescience.com](mailto:cderwin@predictivescience.com).
