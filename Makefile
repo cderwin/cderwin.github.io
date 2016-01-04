@@ -13,4 +13,5 @@ build: $(src)
 
 deploy: build
 	rm -rf $(deploydir)/* && \
+	mkdir -p $(deploydir) && \
 	rsync -r $(builddir)/* $(deploydir)/
