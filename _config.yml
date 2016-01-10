@@ -1,0 +1,45 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# SEO settings
+title: camderwin.us
+description: "The personal site of Cameron Derwin"
+keywords: "cameron, cam, derwin, derz, ders, software, engineer, resume, cv, austin, groton"
+url: https://camderwin.us
+baseurl: null
+
+# Author settings
+author:
+  name: Cameron Derwin
+  job: Backend Engineer
+  bio: ""
+  thumb: /images/author.jpg
+  email: camderwin@gmail.com
+  url: https://camderwin.us
+  github: https://github.com/cderwin
+  twitter: https://twitter.com/dirtyderzzz
+  linkedin: https://linkedin.com/in/cderwin
+
+markdown: kramdown
+highlighter: pygments
+
+# Build settings
+source: src
+destination: build
+exclude: [".gitignore"]
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+gems:
+  - bourbon
+
+# Development Server
+detach: True
+hostname: 0.0.0.0 # Sometimes this will be on remote servers
