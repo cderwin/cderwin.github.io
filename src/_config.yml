@@ -20,7 +20,11 @@ github_username:  cderwin
 highlighter: pygments
 
 # Build settings
-markdown: redcarpet
-
+source: src
 destination: build
-exclude: [".gitignore", "Makefile"]
+markdown: kramdown
+exclude: [".gitignore"]
+
+# Development Server
+detach: True
+hostname: 0.0.0.0 # Sometimes this will be on remote servers
