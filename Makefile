@@ -30,6 +30,4 @@ build: $(src) .install.ts
 	$(jekyll) build $(jekyll_args)
 
 deploy: build
-	rm -rf $(deploydir)/* && \
-	mkdir -p $(deploydir) && \
-	rsync -r $(builddir)/* $(deploydir)/
+	./deploy.sh
