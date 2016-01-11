@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # SEO settings
-title: camderwin.us
+title: Cameron Derwin
 description: "The personal site of Cameron Derwin"
 keywords: "cameron, cam, derwin, derz, ders, software, engineer, resume, cv, austin, groton"
 url: https://camderwin.us
@@ -34,11 +34,12 @@ exclude: [".gitignore"]
 
 # Sass configuration
 sass:
-  sass_dir: assets/scss
+  sass_dir: assets/stylesheets
   style: compressed # expanded
 
 gems:
   - bourbon
+  - neat
 
 # Development Server
 detach: True
