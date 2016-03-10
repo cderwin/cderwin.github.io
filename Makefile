@@ -1,3 +1,5 @@
+SHELL := bash
+
 bundle := bundle
 bundle_pfx := bundle exec
 
@@ -15,6 +17,7 @@ src := $(shell find . -type f)
 all: build
 
 .install.ts: Gemfile
+	echo $$PATH && \
 	bundle install && \
 	touch $@
 
@@ -30,4 +33,8 @@ build: $(src) .install.ts
 	$(jekyll) build $(jekyll_args)
 
 deploy: build
-	./deploy.sh
+	mkdir -p $(deploydir) && \
+	rsync -a $(builddir)/* $(deploydir)
+
+clean:
+	rm .*.ts
