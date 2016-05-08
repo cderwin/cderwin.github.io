@@ -42,5 +42,5 @@ gems:
   - neat
 
 # Development Server
-detach: True
-hostname: 0.0.0.0 # Sometimes this will be on remote servers
+host: 0.0.0.0
+port: 80

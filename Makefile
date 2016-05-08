@@ -1,40 +1,23 @@
-SHELL := bash
+tag := registry.camderwin.us/site
 
-bundle := bundle
-bundle_pfx := bundle exec
+.PHONY: build run debug kill release
 
-jekyll := $(bundle_pfx) jekyll
-jekyll_args := 
+build:
+	docker-compose build
 
-srcdir := src
-builddir := build
-deploydir := /var/www/site
-
-src := $(shell find . -type f)
-
-.PHONY: run kill restart test
-
-all: build
-
-.install.ts: Gemfile
-	echo $$PATH && \
-	bundle install && \
-	touch $@
-
-run: $(src)
-	$(jekyll) serve $(jekyll_args)
+run:
+	docker-compose up -d
 
 kill:
-	kill -9 `lsof -ti :4000`
+	docker-compose down
 
-restart: kill run
+test:
+	docker run --rm -p 80:80 $(tag)
 
-build: $(src) .install.ts
-	$(jekyll) build $(jekyll_args)
+debug:
+	docker-compose run --service-ports jekyll
 
-deploy: build
-	mkdir -p $(deploydir) && \
-	rsync -a $(builddir)/* $(deploydir)
-
-clean:
-	rm .*.ts
+release:
+	docker build -t $(tag) . && \
+	docker tag $(tag) $(tag):latest && \
+	docker push $(tag)
