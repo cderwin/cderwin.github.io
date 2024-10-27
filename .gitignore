@@ -5,3 +5,4 @@ build/
 .*.ts
 *~
 *.sw*
+Gemfile.lock

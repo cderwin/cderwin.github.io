@@ -1,9 +1,0 @@
-Dockerfile
-docker-compose.yml
-Makefile
-Gemfile.lock
-.sass-cache/
-.git/
-.gitignore
-.travis.yml
-.*.ts

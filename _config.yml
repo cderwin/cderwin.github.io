@@ -1,46 +1,50 @@
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# SEO settings
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 title: Cameron Derwin
-description: "The personal site of Cameron Derwin"
-keywords: "cameron, cam, derwin, derz, ders, software, engineer, resume, cv, austin, groton"
-url: https://camderwin.us
-baseurl: null
-
-# Author settings
-author:
-  name: Cameron Derwin
-  job: Backend Engineer
-  bio: ""
-  thumb: /images/author.jpg
-  email: camderwin@gmail.com
-  url: https://camderwin.us
-  github: https://github.com/cderwin
-  twitter: https://twitter.com/dirtyderzzz
-  linkedin: https://linkedin.com/in/cderwin
-
-markdown: kramdown
-highlighter: pygments
+email: camderwin@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cderwin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
 
 # Build settings
+markdown: kramdown
+theme: minima
 source: src
 destination: build
 exclude: [".gitignore"]
-
-# Sass configuration
-sass:
-  sass_dir: assets/stylesheets
-  style: compressed # expanded
-
-gems:
-  - bourbon
-  - neat
+plugins:
+  - jekyll-feed
 
 # Development Server
 host: 0.0.0.0
 port: 80
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
