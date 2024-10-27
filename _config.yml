@@ -16,13 +16,14 @@
 title: Cameron Derwin
 email: camderwin@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hi! Welcome to the blog and professional site of Cameron Derwin.
+  Here you'll find information about my work in geospatial AI, as 
+  well as some writing about the mountain adventures that fill most of my life.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://cderwin.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  cderwin
+linkedin_username: camderwin
+instagram_username: cderwin15
 
 # Build settings
 markdown: kramdown
