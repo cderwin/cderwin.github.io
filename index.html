@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sno</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="background-container" class="background">
+      <a href="mailto:camderwin@gmail.com">
+        <span class="background-link-content"></span>
+      </a>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const class_name =
+      Math.random() > 0.5 ? "background-shuksan" : "background-denali";
+    document.getElementById(
+      "background-container"
+    ).className = `background ${class_name}`;
+  </script>
+</html>

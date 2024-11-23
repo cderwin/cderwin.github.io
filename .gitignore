@@ -1,8 +1,2 @@
-_site/
-build/
-.sass-cache
-.jekyll-metadata
-.*.ts
 *~
 *.sw*
-Gemfile.lock
